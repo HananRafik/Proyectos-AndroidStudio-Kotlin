@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"
+        />
+
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese tu correo"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese tu contraseña"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+    <EditText
+        android:id="@+id/edtApodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un apodo"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnAcceder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginRight="16dp"
+            android:text="Iniciar Sesión"
+            android:textSize="20dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3EB3E7"
+            android:textSize="20dp"
+            android:text="Registrar"/>
+    </LinearLayout>
+
+
+</LinearLayout>

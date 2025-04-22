@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/pantalla_operaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:gravity="end"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:singleLine="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Fila 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="--->"
+                android:id="@+id/btnEliminar"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"/>
+
+            <Button android:text="Rad"
+                android:id="@+id/btnRad"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="√"
+                android:id="@+id/btnRaizCuadrada"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="C"
+                android:id="@+id/btnC"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                />
+
+            <Button android:text="()"
+                android:id="@+id/btnParentesis"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="%"
+                android:id="@+id/btnPorcentaje"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="/"
+                android:id="@+id/btnDivicion"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+        </LinearLayout>
+
+        <!-- Fila 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="sin"
+                android:id="@+id/btnSino"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="cos"
+                android:id="@+id/btnCoseno"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="tan"
+                android:id="@+id/btnTangente"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="7"
+                android:id="@+id/btn7"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="8"
+                android:id="@+id/btn8"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="9"
+                android:id="@+id/btn9"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="x"
+                android:id="@+id/btnMulti"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+        </LinearLayout>
+
+
+
+
+        <!-- Fila 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="In"
+                android:id="@+id/btnIn"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="Log"
+                android:id="@+id/btnLog"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="1/x"
+                android:id="@+id/btnInverso"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="4"
+                android:id="@+id/btn4"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="5"
+                android:id="@+id/btn5"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="6"
+                android:id="@+id/btn6"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="-"
+                android:id="@+id/btnResta"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+        </LinearLayout>
+
+        <!-- Fila 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="e^x"
+                android:id="@+id/btnExponencial"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="x²"
+                android:id="@+id/btnElevado"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="x^y"
+                android:id="@+id/btnElevarPotencial"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="1"
+                android:id="@+id/btn1"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="2"
+                android:id="@+id/btn2"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="3"
+                android:id="@+id/btn3"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="+"
+                android:id="@+id/btnSuma"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+        </LinearLayout>
+
+        <!-- Fila 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="|x|"
+                android:id="@+id/btnAbsoluto"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="π"
+                android:id="@+id/btnPi"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="e"
+                android:id="@+id/btnConstante"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"/>
+
+            <Button android:text="+/-"
+                android:id="@+id/btn_cambiar_signo"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="0"
+                android:id="@+id/btn0"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="."
+                android:id="@+id/btnDecimal"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"/>
+
+            <Button android:text="="
+                android:id="@+id/btnIgual"
+                style="@style/calculadoraBTNH"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+               />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
